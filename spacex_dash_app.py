@@ -42,7 +42,6 @@ html.P("Payload range (Kg):"),
 
 @app.callback(Output(component_id='success-pie-chart', component_property='figure'),
               Input(component_id='site-dropdown', component_property='value'))
-
 def get_pie_chart(entered_site):
     filtered_df = spacex_df
     if entered_site == 'ALL':
